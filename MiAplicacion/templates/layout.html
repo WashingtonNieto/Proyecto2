@@ -1,0 +1,51 @@
+{% load static %}
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %} <!-- titulo de cada pagina --> {% endblock %} Proyecto2
+    </title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <!-- Cabecera de la pagina -->
+    <header>
+      <div id="logotipo">
+        <!-- logo -->
+        <img src="{% static 'images/logo.png' %}" alt="logo" />
+        <h1>Sitio Web - Washington Nieto</h1>
+      </div>
+    </header>
+    <nav>
+      <hr />
+      <ul>
+        <li>
+          <a href="/index">Inicio</a>
+        </li>
+        <li>
+          <a href="/hola_mundo">Hola Mundo</a>
+        </li>
+        <li>
+          <a href="/pagina">Pagina</a>
+        </li>
+        <li>
+          <a href="/contacto">Contacto</a>
+        </li>
+      </ul>
+      <hr />
+    </nav>
+
+    <div id="content">
+        <h2 class="title">Titulo de prueba</h2>
+        {% block content %} 
+        <strong>Contenido del bloque original !!</strong>
+        {% endblock %}
+    </div>
+
+    <footer>Proyecto2 - python (django) - Washington Nieto &copy;2026</footer>
+  </body>
+</html>
