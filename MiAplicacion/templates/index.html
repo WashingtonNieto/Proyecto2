@@ -5,6 +5,24 @@
     {% endblock%}
     
     {% block content %}
-        <h1>Inicio</h1>
+
+        {% comment %} esto es un comentario {% endcomment %}
+        <h1 class="title">Inicio</h1>
+        <p> {{mi_variable}} </p>
+
+        {% if nombre%}
+            <p> {{nombre}} </p>
+        {% else %}
+            <strong> El nombre no existe </strong>
+        {% endif %}
+
+        <h3>Listado de lenguajes de programación</h3>
+        <ul>
+            {% for lenguaje in lenguajes %}
+                <li>{{lenguaje}}</li>
+            {% endfor%}
+        </ul>
+        
         <p>creacion pagina especial</p>
+
     {% endblock%}

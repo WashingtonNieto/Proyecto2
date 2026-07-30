@@ -6,6 +6,16 @@
     text-decoration: note;
 }
 
+p,h2,h3,ul{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+ul,ol{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
 body{
     background-color: #f2f2f2;
 }
@@ -80,8 +90,6 @@ nav ul li a:hover{
 .barra{
     width: 1250px;
     margin: 0px auto;
-    margin-bottom: 140px;
-
 }
 
 .esquina-izquierda{
@@ -104,4 +112,45 @@ nav ul li a:hover{
     height: 10px;
     background: #2B2F30;
     float: left;
+}
+
+
+/* Estilos contenido central */
+#content{
+    width: 1212px;
+    min-height: 420px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    /* border: 1px solid red; */
+}
+
+.box{
+    background: white;
+    width: 97%;
+    min-height: 420px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    margin: 0px auto;
+}
+
+.title{
+    color: #444;
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+footer{
+    width: 1250px;
+    background-color: #1B1E1F;
+    border: 1px solid #333;
+    color: #d1d4d6;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 20px gray;
 }

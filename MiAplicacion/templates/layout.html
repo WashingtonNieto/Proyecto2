@@ -38,19 +38,21 @@
     </nav>
 
     <div class="barra">
-        <span class="esquina-izquierda"></span>
-        <span class="relleno-barra"></span>
-        <span class="esquina-derecha"></span>
-
+      <span class="esquina-izquierda"></span>
+      <span class="relleno-barra"></span>
+      <span class="esquina-derecha"></span>
     </div>
 
     <div id="content">
-        <h2 class="title">Titulo de prueba</h2>
-        {% block content %} 
-        <strong>Contenido del bloque original !!</strong>
+      <div class="box">
+
+        {% block content %}
+          <strong>Contenido del bloque original !!</strong>
         {% endblock %}
+        
+      </div>
     </div>
 
-    <footer>Proyecto2 - python (django) - Washington Nieto &copy;2026</footer>
+    <footer>Proyecto2 - python (django) - Washington Nieto ARce &copy;2026</footer>
   </body>
 </html>
